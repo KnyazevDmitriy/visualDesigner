@@ -161,6 +161,159 @@
     left: 0;
   }
 }
+.section1 {
+  display: flex;
+  border-bottom: 3px solid #212121;
+}
+.section1 .text {
+  width: 858px;
+  padding-top: 42px;
+  padding-left: 184px;
+  padding-right: 84px;
+  border-right: 3px solid #212121;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section1 .text .hi {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+.section1 .text .about {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 52px;
+}
+.section1 .text .subtitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #212121;
+}
+.section1 .text .buttons {
+  position: relative;
+}
+.section1 .text .buttons .socials {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  justify-content: center;
+}
+.section1 .text .buttons .socials .social {
+  display: flex;
+  gap: 16px;
+}
+.section1 .text .buttons .socials .social .follow {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.section1 .text .buttons .socials .social a {
+  padding: 10px 10px 7px;
+  border: 1px solid #212121;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.section1 .text .buttons .socials .social a:hover {
+  border: 2px solid #212121;
+}
+.section1 .text .buttons .socials .social .img {
+  width: 18px;
+  height: 18px;
+}
+.section1 .text .buttons .socials .btns {
+  display: flex;
+  gap: 30px;
+}
+.section1 .text .buttons .socials .btns .request {
+  padding: 14px;
+  text-decoration: none;
+  color: #F6F6F6;
+  background-color: #212121;
+  border: 1px solid #212121;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+.section1 .text .buttons .socials .btns .request:hover {
+  background-color: #EEECEA;
+  color: #212121;
+}
+.section1 .text .buttons .socials .btns .download {
+  padding: 14px;
+  text-decoration: none;
+  color: #212121;
+  background-color: none;
+  border: 1px solid #212121;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+.section1 .text .buttons .socials .btns .download:hover {
+  background-color: #212121;
+  color: #F6F6F6;
+}
+.section1 .banner {
+  background: url(../img/banner-1.jpg) no-repeat;
+  width: 582px;
+  height: 572px;
+}
+
+@media (max-width: 480px) {
+  .section1 {
+    max-width: 310px auto;
+  }
+  .section1 .text {
+    max-width: 300px;
+    margin: 0 5%;
+    padding: 0;
+    margin-top: 40px;
+    border: none;
+  }
+  .section1 .banner {
+    display: none;
+  }
+}
 * {
   margin: 0;
   padding: 0;
