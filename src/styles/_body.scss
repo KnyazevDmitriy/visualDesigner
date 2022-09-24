@@ -396,16 +396,19 @@
     }
 
     .section3 {
-        display: none;
         flex-direction: column-reverse;
+        border: none;
 
         .text {
             width: 100%;
+            height: 690px;
         }
 
         .banner {
-            // background: url(../img/banner-2-monile.jpg) no-repeat;
-            display: none;
+            background: url(../img/banner-2-monile.jpg) no-repeat;
+            background-size: 100%;
+            width: auto;
+            // height: auto;
         }
     }
 }

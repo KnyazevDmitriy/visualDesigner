@@ -72,6 +72,9 @@
   }
 }
 @media (max-width: 768px) {
+  .header {
+    padding: 0 16px;
+  }
   .header__nav .nav-menu .list {
     background-color: #212121;
   }
@@ -84,8 +87,8 @@
     display: block;
   }
   .header .burger.active .bar {
-    position: relative;
-    left: 180px;
+    position: absolute;
+    right: 15px;
     display: block;
     width: 2rem;
     height: 0.2rem;
@@ -102,18 +105,18 @@
     opacity: 0;
   }
   .header .burger.active .bar:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-    -webkit-transform: translateY(7px) rotate(45deg);
-    -moz-transform: translateY(7px) rotate(45deg);
-    -ms-transform: translateY(7px) rotate(45deg);
-    -o-transform: translateY(7px) rotate(45deg);
+    transform: translateY(2px) rotate(45deg) translateX(-2px);
+    -webkit-transform: translateY(2px) rotate(45deg) translateX(-2px);
+    -moz-transform: translateY(2px) rotate(45deg) translateX(-2px);
+    -ms-transform: translateY(2px) rotate(45deg) translateX(-2px);
+    -o-transform: translateY(2px) rotate(45deg) translateX(-2px);
   }
   .header .burger.active .bar:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
-    -webkit-transform: translateY(-9px) rotate(-45deg);
-    -moz-transform: translateY(-9px) rotate(-45deg);
-    -ms-transform: translateY(-9px) rotate(-45deg);
-    -o-transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(0px) rotate(-45deg) translateX(-2px);
+    -webkit-transform: translateY(0px) rotate(-45deg) translateX(-2px);
+    -moz-transform: translateY(0px) rotate(-45deg) translateX(-2px);
+    -ms-transform: translateY(0px) rotate(-45deg) translateX(-2px);
+    -o-transform: translateY(0px) rotate(-45deg) translateX(-2px);
   }
   .header .nav-menu {
     position: absolute;
@@ -502,14 +505,17 @@
     height: 2300px;
   }
   .section3 {
-    display: none;
     flex-direction: column-reverse;
+    border: none;
   }
   .section3 .text {
     width: 100%;
+    height: 690px;
   }
   .section3 .banner {
-    display: none;
+    background: url(../img/banner-2-monile.jpg) no-repeat;
+    background-size: 100%;
+    width: auto;
   }
 }
 * {
