@@ -448,6 +448,9 @@
   .section1 .banner {
     display: none;
   }
+  .section2 {
+    height: 2300px;
+  }
 }
 * {
   margin: 0;
