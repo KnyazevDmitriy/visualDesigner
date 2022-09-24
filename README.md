@@ -1,4 +1,4 @@
 ## Visual Designer
 
-### This is a multi-page site
+### This is a portflio site
 ### [Link](https://knyazevdmitriy.github.io/visualDesigner/)
