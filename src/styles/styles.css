@@ -85,7 +85,7 @@
   }
   .header .burger.active .bar {
     position: relative;
-    left: 160px;
+    left: 180px;
     display: block;
     width: 2rem;
     height: 0.2rem;
