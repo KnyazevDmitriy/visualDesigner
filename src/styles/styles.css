@@ -407,7 +407,11 @@
   width: 582px;
   height: 565px;
   background-color: #212121;
-  margin-right: 15px;
+  padding-left: 62px;
+  padding-right: 128px;
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
 }
 .section3 .text .title-exp {
   font-family: "Poppins";
@@ -416,6 +420,43 @@
   font-size: 48px;
   line-height: 62px;
   background-color: inherit;
+  color: #F6F6F6;
+}
+.section3 .text .subtitle {
+  background-color: inherit;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #F6F6F6;
+}
+.section3 .text .msg {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 138%;
+  background-color: inherit;
+  color: #F6F6F6;
+}
+.section3 .text .lists {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 138%;
+  background-color: #212121;
+  color: #F6F6F6;
+}
+.section3 .text .list {
+  margin-left: 18px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 138%;
+  background-color: #212121;
   color: #F6F6F6;
 }
 

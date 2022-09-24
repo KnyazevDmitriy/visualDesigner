@@ -279,7 +279,11 @@
         width: 582px;
         height: 565px;
         background-color: $black;
-        margin-right: 15px;
+        padding-left: 62px;
+        padding-right: 128px;
+        display: flex;
+        flex-direction: column;
+        gap: 41px;
 
         .title-exp {
             font-family: 'Poppins';
@@ -288,6 +292,47 @@
             font-size: 48px;
             line-height: 62px;
             background-color: inherit;
+            color: $white;
+        }
+
+        .subtitle {
+            background-color: inherit;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+            color: $white;
+        }
+
+        .msg {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 138%;
+            background-color: inherit;
+            color: $white;
+        }
+
+        .lists {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 138%;
+            background-color: $black;
+            color: $white;
+        }
+
+        .list {
+            margin-left: 18px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 138%;
+            background-color: $black;
             color: $white;
         }
     }
