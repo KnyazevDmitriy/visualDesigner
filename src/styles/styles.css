@@ -450,7 +450,16 @@
   color: #F6F6F6;
 }
 .section3 .text .list {
-  margin-left: 18px;
+  margin-left: 25px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 138%;
+  background-color: #212121;
+  color: #F6F6F6;
+}
+.section3 .text .education {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -460,7 +469,7 @@
   color: #F6F6F6;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 768px) {
   .section1 {
     border: none;
     margin: 0 10px;
@@ -491,6 +500,16 @@
   }
   .section2 {
     height: 2300px;
+  }
+  .section3 {
+    display: none;
+    flex-direction: column-reverse;
+  }
+  .section3 .text {
+    width: 100%;
+  }
+  .section3 .banner {
+    display: none;
   }
 }
 * {

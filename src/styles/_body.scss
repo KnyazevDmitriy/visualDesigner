@@ -326,7 +326,17 @@
         }
 
         .list {
-            margin-left: 18px;
+            margin-left: 25px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 138%;
+            background-color: $black;
+            color: $white;
+        }
+
+        .education {
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 400;
@@ -338,7 +348,7 @@
     }
 }
 
-@media (max-width: 765px) {
+@media (max-width: 768px) {
 
     .section1 {
         border: none;
@@ -383,5 +393,19 @@
 
     .section2 {
         height: 2300px;
+    }
+
+    .section3 {
+        display: none;
+        flex-direction: column-reverse;
+
+        .text {
+            width: 100%;
+        }
+
+        .banner {
+            // background: url(../img/banner-2-monile.jpg) no-repeat;
+            display: none;
+        }
     }
 }
