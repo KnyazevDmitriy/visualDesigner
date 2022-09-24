@@ -223,8 +223,8 @@
   gap: 16px;
 }
 .section1 .text .buttons .socials .social a {
-  padding: 10px 10px 5px 10px;
-  border: 1px solid #212121;
+  padding: 7px 7px 5px;
+  border: 2px solid #212121;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -245,8 +245,8 @@
 }
 .section1 .text .buttons .socials .social .img {
   transition: all 0.5s;
-  width: 27px;
-  height: 27px;
+  width: 30px;
+  height: 30px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -391,6 +391,32 @@
 }
 .section2 .wrapper .block__body .lists-2 .list {
   background-color: inherit;
+}
+
+.section3 {
+  border-top: 3px solid #212121;
+  border-bottom: 3px solid #212121;
+  display: flex;
+}
+.section3 .banner {
+  background: url(../img/banner-2.png) no-repeat;
+  width: 858px;
+  height: 565px;
+}
+.section3 .text {
+  width: 582px;
+  height: 565px;
+  background-color: #212121;
+  margin-right: 15px;
+}
+.section3 .text .title-exp {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 62px;
+  background-color: inherit;
+  color: #F6F6F6;
 }
 
 @media (max-width: 765px) {
