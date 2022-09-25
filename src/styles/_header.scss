@@ -36,8 +36,11 @@
     .burger {
         display: none;
         cursor: pointer;
+        padding: 10px;
 
         .bar {
+            position: absolute;
+            right: 15px;
             display: block;
             width: 2rem;
             height: 0.23rem;
@@ -55,14 +58,17 @@
 
         .bar:nth-child(1) {
             width: 1.1rem;
+            top: 10px;
         }
 
         .bar:nth-child(2) {
             width: 2rem;
+            top: 17px;
         }
 
         .bar:nth-child(3) {
             width: 1.5rem;
+            top: 24px;
         }
     }
 }
@@ -102,10 +108,10 @@
             .nav-menu {
 
                 .list {
-                    background-color: $black;
+                    background-color: inherit;
 
                     .link {
-                        background-color: inherit;
+                        background-color: $black;
                         color: $white;
                     }
                 }
@@ -115,6 +121,7 @@
         .burger {
             margin-top: 15px;
             display: block;
+            cursor: pointer;
         }
 
         .burger.active .bar {
@@ -139,19 +146,19 @@
         }
     
         .burger.active .bar:nth-child(1) {
-            transform: translateY(2px) rotate(45deg) translateX(-2px);
-            -webkit-transform: translateY(2px) rotate(45deg) translateX(-2px);
-            -moz-transform: translateY(2px) rotate(45deg) translateX(-2px);
-            -ms-transform: translateY(2px) rotate(45deg) translateX(-2px);
-            -o-transform: translateY(2px) rotate(45deg) translateX(-2px);
+            transform: translateY(4px) rotate(45deg) translateX(-2px);
+            -webkit-transform: translateY(4px) rotate(45deg) translateX(-2px);
+            -moz-transform: translateY(4px) rotate(45deg) translateX(-2px);
+            -ms-transform: translateY(4px) rotate(45deg) translateX(-2px);
+            -o-transform: translateY(4px) rotate(45deg) translateX(-2px);
 }
     
         .burger.active .bar:nth-child(3) {
-            transform: translateY(0px) rotate(-45deg) translateX(-2px);
-            -webkit-transform: translateY(0px) rotate(-45deg) translateX(-2px);
-            -moz-transform: translateY(0px) rotate(-45deg) translateX(-2px);
-            -ms-transform: translateY(0px) rotate(-45deg) translateX(-2px);
-            -o-transform: translateY(0px) rotate(-45deg) translateX(-2px);
+            transform: translateY(-12px) rotate(-45deg) translateX(-2px);
+            -webkit-transform: translateY(-12px) rotate(-45deg) translateX(-2px);
+            -moz-transform: translateY(-12px) rotate(-45deg) translateX(-2px);
+            -ms-transform: translateY(-12px) rotate(-45deg) translateX(-2px);
+            -o-transform: translateY(-12px) rotate(-45deg) translateX(-2px);
 }
     
         .nav-menu {
