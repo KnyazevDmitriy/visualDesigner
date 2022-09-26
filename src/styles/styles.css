@@ -32,7 +32,7 @@
 }
 .header .burger .bar {
   position: absolute;
-  right: 15px;
+  right: 25px;
   display: block;
   width: 2rem;
   height: 0.23rem;
@@ -95,7 +95,7 @@
   }
   .header .burger.active .bar {
     position: absolute;
-    right: 15px;
+    right: 25px;
     display: block;
     width: 2rem;
     height: 0.2rem;
@@ -504,7 +504,7 @@
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin-top: 50px;
+    margin-top: 0px;
     border: none;
   }
   .section1 .text .about {
@@ -550,7 +550,7 @@
     position: absolute;
     background-color: #212121;
     width: 50px;
-    height: 335px;
+    height: 265px;
     top: 3271px;
     right: 0;
     border-left: 3px solid #F6F6F6;
@@ -570,7 +570,7 @@
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin-top: 50px;
+    margin-top: 10px;
     border: none;
   }
   .section1 .text .about {
