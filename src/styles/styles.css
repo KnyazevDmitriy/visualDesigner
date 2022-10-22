@@ -533,7 +533,7 @@
 @media (max-width: 768px) {
   .section1 {
     border: none;
-    margin: 0 10px;
+    margin: 0 10px !important;
   }
   .section1 .text {
     display: flex;
