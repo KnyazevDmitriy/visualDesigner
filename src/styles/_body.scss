@@ -361,6 +361,7 @@
     // height: 545px;
     
     .swiper-container {
+        padding: 70px 70px 30px 70px;
         text-align: center;
         position: relative;
 
@@ -371,15 +372,16 @@
                 // height: 500px;
 
                 img {
-                    width: 1000px;
+                    width: 700px;
+                    height: 450px;
                 }
             }
         }
 
         .swiper-pagination {
             position: absolute;
-            bottom: -1px;
-            
+            bottom: 7px;
+            background: none;
         }
         .swiper-pagination-bullet-active {
             background: black;
@@ -396,13 +398,19 @@
             -o-transition: all .5s;
         }
 
-        .swiper-button-prev,
-        .swiper-button-next {
+        .swiper-button-prev {
+            position: absolute;
+            left: 150px;
             background: none;
             color: black;
         }
 
-        
+        .swiper-button-next {
+            position: absolute;
+            right: 150px;
+            background: none;
+            color: black;
+        }
     }
 }
 
