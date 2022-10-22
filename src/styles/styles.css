@@ -415,15 +415,13 @@
 }
 .section3 .banner {
   background: url(../img/banner-2.png) no-repeat;
+  background-size: 700px;
   width: 858px;
-  height: 565px;
 }
 .section3 .text {
-  width: 582px;
-  height: 565px;
+  width: 592px;
   background-color: #212121;
   padding-left: 62px;
-  padding-right: 128px;
   display: flex;
   flex-direction: column;
   gap: 41px;
@@ -485,11 +483,41 @@
 }
 
 .section4 {
-  background-color: #212121;
   overflow: hidden;
+  position: relative;
 }
 .section4 .swiper-container {
   text-align: center;
+  position: relative;
+}
+.section4 .swiper-container .swiper-wrapper .swiper-slide {
+  width: 1000px;
+}
+.section4 .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 1000px;
+}
+.section4 .swiper-container .swiper-pagination {
+  position: absolute;
+  bottom: -1px;
+}
+.section4 .swiper-container .swiper-pagination-bullet-active {
+  background: black;
+  width: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.section4 .swiper-container .swiper-button-prev,
+.section4 .swiper-container .swiper-button-next {
+  background: none;
+  color: black;
 }
 
 @media (max-width: 768px) {

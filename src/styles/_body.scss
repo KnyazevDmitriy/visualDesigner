@@ -276,16 +276,17 @@
 
     .banner {
         background: url(../img/banner-2.png) no-repeat;
+        background-size: 700px;
         width: 858px;
-        height: 565px;
+        // height: 565px;
     }
 
     .text {
-        width: 582px;
-        height: 565px;
+        width: 592px;
+        // height: 565px;
         background-color: $black;
         padding-left: 62px;
-        padding-right: 128px;
+        // padding-right: 128px;
         display: flex;
         flex-direction: column;
         gap: 41px;
@@ -354,12 +355,54 @@
 }
 
 .section4 {
-    background-color: $black;
+    // background-color: $black;
     overflow: hidden;
+    position: relative;
+    // height: 545px;
     
     .swiper-container {
         text-align: center;
+        position: relative;
 
+        .swiper-wrapper {
+
+            .swiper-slide {
+                width: 1000px;
+                // height: 500px;
+
+                img {
+                    width: 1000px;
+                }
+            }
+        }
+
+        .swiper-pagination {
+            position: absolute;
+            bottom: -1px;
+            
+        }
+        .swiper-pagination-bullet-active {
+            background: black;
+            width: 20px;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            transition: all .5s;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -ms-transition: all .5s;
+            -o-transition: all .5s;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            background: none;
+            color: black;
+        }
+
+        
     }
 }
 
