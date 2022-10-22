@@ -172,7 +172,6 @@
 }
 .section1 {
   display: flex;
-  border-bottom: 3px solid #212121;
 }
 .section1 .text {
   width: 858px;
@@ -188,7 +187,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 36px;
 }
 .section1 .text .about {
@@ -212,13 +211,13 @@
 .section1 .text .buttons .socials {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 25px;
   justify-content: center;
 }
 .section1 .text .buttons .socials .flex {
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
 }
 .section1 .text .buttons .socials .follow {
   font-family: "Poppins";
@@ -265,9 +264,10 @@
 .section1 .text .buttons .socials .btns {
   display: flex;
   gap: 30px;
+  padding-bottom: 30px;
 }
 .section1 .text .buttons .socials .btns .request {
-  padding: 14px;
+  padding: 12px;
   text-decoration: none;
   color: #F6F6F6;
   background-color: #212121;
@@ -285,13 +285,13 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
 }
 .section1 .text .buttons .socials .btns .request:hover {
   box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
 }
 .section1 .text .buttons .socials .btns .download {
-  padding: 14px;
+  padding: 12px;
   text-decoration: none;
   color: #212121;
   background-color: none;
@@ -309,15 +309,15 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
 }
 .section1 .text .buttons .socials .btns .download:hover {
   box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
 }
 .section1 .banner {
   background: url(../img/banner-1.jpg) no-repeat;
-  width: 582px;
-  height: 572px;
+  width: 826px;
+  border-right: 3px solid #212121;
 }
 
 .title {
@@ -327,6 +327,7 @@
   font-size: 48px;
   line-height: 62px;
   padding: 20px 120px;
+  border-top: 3px solid #212121;
   border-bottom: 3px solid #212121;
 }
 
@@ -403,10 +404,14 @@
   background-color: inherit;
 }
 
-.section3 {
+.borders {
   border-top: 3px solid #212121;
-  border-bottom: 3px solid #212121;
+}
+
+.section3 {
   display: flex;
+  border-right: 3px solid #212121;
+  border-left: 3px solid #212121;
 }
 .section3 .banner {
   background: url(../img/banner-2.png) no-repeat;
@@ -478,21 +483,13 @@
   background-color: #212121;
   color: #F6F6F6;
 }
-.section3 .text .border1 {
-  position: absolute;
-  width: 133px;
-  top: 2000px;
-  right: 0;
-  border-top: 3px solid #F6F6F6;
-}
-.section3 .text .border2 {
-  position: absolute;
+
+.section4 {
   background-color: #212121;
-  width: 70px;
-  height: 335px;
-  top: 2003px;
-  right: 0;
-  border-left: 3px solid #F6F6F6;
+  overflow: hidden;
+}
+.section4 .swiper-container {
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -538,22 +535,6 @@
   .section3 .text {
     width: 100%;
     height: 690px;
-  }
-  .section3 .text .border1 {
-    position: absolute;
-    width: 90px;
-    top: 3268px;
-    right: 0;
-    border-top: 3px solid #F6F6F6;
-  }
-  .section3 .text .border2 {
-    position: absolute;
-    background-color: #212121;
-    width: 50px;
-    height: 265px;
-    top: 3271px;
-    right: 0;
-    border-left: 3px solid #F6F6F6;
   }
   .section3 .banner {
     background: url(../img/banner-2-monile.jpg) no-repeat;

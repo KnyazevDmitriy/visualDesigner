@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="stylesheet" href="./src/styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
     <title>Visual Designer</title>
 </head>
 <body>
@@ -26,7 +28,7 @@
     </header>
     <div class="test"></div>
     <main>
-        <section class="section1">
+        <section class="section1 container">
             <div class="text">
                 <div>
                     <p class="hi">Hi!</p>
@@ -117,7 +119,8 @@
                 </div>
             </div>
         </section>
-        <section class="section3" id="experience">
+        <div class="borders"></div>
+        <section class="section3 container" id="experience">
             <div class="banner"></div>
             <div class="text">
                 <div style="display: flex; flex-direction:column; gap: 10px; background-color: #212121;">
@@ -139,14 +142,26 @@
                     </ul>
                     <p class="education">Education: Minsk College of Arts (specialty - Graphic Design)</p>
                 </div>
-                <div class="border1"></div>
-                <div class="border2"></div>
             </div>
+        </section>
+        <div class="borders"></div>
+
+        <section class="section4">
+            <div class="swiper-container">
+                <!-- Оболочка для слайдера -->
+                <div class="swiper-wrapper">
+                    <!-- Оболочка для отдельного слайда -->
+                    <div class="swiper-slide"><img src="./src/img/swiper1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./src/img/swiper2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./src/img/swiper3.jpg" alt=""></div>
+                </div>
+            </div>    
         </section>
     </main>
 
     <script src="./src/js/burger.js" defer></script>
-    <script src="./src/js/scroll.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="./src/js/scroll.js" defer></script>
+    <script src="./src/js/swiper.js" defer></script>
+    <script src="./src/js/swiper-bundle.min.js"></script>
 </body>
 </html>
