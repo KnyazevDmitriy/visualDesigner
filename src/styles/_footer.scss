@@ -79,7 +79,7 @@
             justify-content: space-evenly;
 
             .mail {
-                // position: relative;
+                position: relative;
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 500;
@@ -97,8 +97,8 @@
             .mail::before {
                 position: absolute;
                 content: url(../img/mail.png);
-                left: 220px;
-                bottom: 0;
+                left: -30px;
+                top: 0;
             }
 
             .text {

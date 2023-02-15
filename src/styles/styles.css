@@ -695,6 +695,7 @@
   justify-content: space-evenly;
 }
 .footer__contacts .wrapper-1 .mail {
+  position: relative;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -709,8 +710,8 @@
 .footer__contacts .wrapper-1 .mail::before {
   position: absolute;
   content: url(../img/mail.png);
-  left: 220px;
-  bottom: 0;
+  left: -30px;
+  top: 0;
 }
 .footer__contacts .wrapper-1 .text {
   font-family: "Poppins";
