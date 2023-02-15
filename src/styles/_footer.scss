@@ -1,0 +1,163 @@
+.footer {
+    position: relative;
+
+    &__form {
+        position: relative;
+        margin-top: 136px;
+        margin-bottom: 136px;
+        
+        width: 70%;
+        height: 224px;
+        background-color: black;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &_text {
+            background: none;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 62px;
+            color: #F6F6F6;
+            width: 410px;
+        }
+
+        &_button {
+            background: #F6F6F6;
+            padding: 25px 45px;
+
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+
+            transition: all .3s;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -o-transition: all .3s;
+
+            cursor: pointer;
+        }
+
+        &_button:hover {
+            background-color: #A09F9E;
+        }
+    }
+
+    &__contacts {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 150px;
+
+
+        .border {
+            position: absolute;
+            height: 150px;
+            width: 2px;
+            right: 40%;
+            background-color: black;
+            z-index: 1;
+        }
+
+        .wrapper-1 {
+            position: absolute;
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .mail {
+                // position: relative;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 123.6%;
+
+                color: black;
+                text-decoration: none;
+            }
+
+            .mail:hover {
+                text-decoration-line: underline;
+            }
+
+            .mail::before {
+                position: absolute;
+                content: url(../img/mail.png);
+                left: 220px;
+                bottom: 0;
+            }
+
+            .text {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+
+        .wrapper-2 {
+            position: absolute;
+            right: 0;
+            width: 40%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .social {
+                display: flex;
+                gap: 30px;
+
+                a {
+                    padding: 6px 8px 5px;
+                    border: 2px solid $black;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    transition: all .5s;
+                    -webkit-transition: all .5s;
+                    -moz-transition: all .5s;
+                    -ms-transition: all .5s;
+                    -o-transition: all .5s;
+                }
+
+                a:hover {
+                    background-color: $white;
+                    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+
+                    .img {
+                        background-color: $white;
+                    }
+                }
+
+                .img {
+                    transition: all .5s;
+                    width: 30px;
+                    height: 30px;
+                    -webkit-transition: all .5s;
+                    -moz-transition: all .5s;
+                    -ms-transition: all .5s;
+                    -o-transition: all .5s;
+                }
+            }
+        }
+    }
+}
+
