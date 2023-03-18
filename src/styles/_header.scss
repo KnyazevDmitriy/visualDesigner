@@ -165,6 +165,7 @@
             -moz-transition: .8s;
             -ms-transition: .8s;
             -o-transition: .8s;
+            background-color: $black;
         }
     
         .list {
@@ -175,7 +176,6 @@
             // left: 0;
             top: 3rem;
             // display: block;
-            background-color: $black;
         }
     }
 }
@@ -192,24 +192,26 @@
     
         .nav-menu {
             position: absolute;
-            left: -100%;
-            top: 3rem;
+            left: 0;
+            top: -1000px;
             gap: 0;
-    
             flex-direction: column;
             width: 100%;
-    
             text-align: center;
-            transition: .3s;
+            transition: all .8s;
             padding-bottom: 15px;
-        }
+            -webkit-transition: all .8s;
+            -moz-transition: all .8s;
+            -ms-transition: all .8s;
+            -o-transition: all .8s;
+}
     
         .list {
             margin: 16px 0;
         }
     
         .nav-menu.active {
-            left: 0;
+            top: 3rem;
         }
     }
 }

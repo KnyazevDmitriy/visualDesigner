@@ -135,13 +135,13 @@
     -moz-transition: 0.8s;
     -ms-transition: 0.8s;
     -o-transition: 0.8s;
+    background-color: #212121;
   }
   .header .list {
     margin: 16px 0;
   }
   .header .nav-menu.active {
     top: 3rem;
-    background-color: #212121;
   }
 }
 @media (max-width: 480px) {
@@ -154,20 +154,24 @@
   }
   .header .nav-menu {
     position: absolute;
-    left: -100%;
-    top: 3rem;
+    left: 0;
+    top: -1000px;
     gap: 0;
     flex-direction: column;
     width: 100%;
     text-align: center;
-    transition: 0.3s;
+    transition: all 0.8s;
     padding-bottom: 15px;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
   }
   .header .list {
     margin: 16px 0;
   }
   .header .nav-menu.active {
-    left: 0;
+    top: 3rem;
   }
 }
 .section1 {
@@ -591,7 +595,6 @@
     margin-top: 0px;
     border: none;
     gap: 10px;
-    text-align: center;
   }
   .section1 .text .about {
     font-family: "Poppins";
