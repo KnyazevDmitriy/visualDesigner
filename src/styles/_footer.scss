@@ -48,6 +48,9 @@
             -o-transition: all .3s;
 
             cursor: pointer;
+
+            color: black;
+            text-decoration: none;
         }
 
         &_button:hover {
@@ -161,3 +164,121 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .footer {
+        &__form {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            width: 80%;
+
+            &_button {
+                padding: 10px 15px;
+            }
+        }
+    }
+
+    .borders {
+        .border {
+            height: 50px;
+            top: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .borders {
+        .border {
+            display: none;
+        }
+    }
+
+    .footer {
+
+        &__form{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 0 5% 0;
+
+            &_text {
+                font-size: 30px;
+                line-height: 42px;
+                max-width: 90%;
+            }
+
+            &_button {
+                padding: 10px 20px;
+            }
+        }
+
+        .borders {
+            margin-bottom: 15px;
+        }
+
+        &__contacts {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            // gap: 100px;
+
+            .wrapper-2 {
+                width: 0;
+                position: static;
+
+            }
+
+            .wrapper-1 {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                width: 0;
+                position: static;
+                gap: 10px;
+                
+                .text {
+                    width: 157px;
+                    text-align: center;
+                }
+            }
+
+            .border {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .borders {
+        .border {
+            display: none;
+        }
+    }
+
+    .footer {
+
+        &__form{
+            width: 100%;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 0 10% 0;
+
+            &_text {
+                font-size: 30px;
+                line-height: 42px;
+                max-width: 90%;
+            }
+
+            &_button {
+                padding: 10px 20px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 27px;
+            }
+        }
+    }
+}

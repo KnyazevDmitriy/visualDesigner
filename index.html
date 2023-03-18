@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles/styles.css">
     <link rel="stylesheet" href="./src/styles/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./src/styles/main.css">
     <title>Visual Designer</title>
 </head>
 <body>
@@ -40,14 +39,15 @@
                         <div class="flex">
                             <p class="follow">Follow me</p>
                             <div class="social">
-                                <a href=""><img class="img" src="./src/img/linked.svg" alt="linkedin"></a>
                                 <a href=""><img class="img" src="./src/img/Be.svg" alt="behance"></a>
+                                <a href=""><img class="img" src="./src/img/linked.svg" alt="linkedin"></a>
                                 <a href=""><img class="img" src="./src/img/insta.svg" alt="instagram"></a>
                                 <a href=""><img class="img" src="./src/img/telegram.svg" alt="telegram"></a>
+
                             </div>
                         </div>
                         <div class="btns">
-                            <a href="mailto:test@mail.ru" class="request">Send Request</a>
+                            <a href="mailto:naka200212@gmail.com" class="request">Send Request</a>
                             <a href="" class="download">Download CV</a>
                         </div>
                     </div>
@@ -55,7 +55,9 @@
             </div>
             <div class="banner"></div>
         </section>
-        <h1 class="title" id="key_skills">Key skills</h1>
+        <div class="borders"></div>
+        <h1 class="title container" id="key_skills">Key skills</h1>
+        <div class="borders"></div>
         <section class="section2 container">
             <div class="wrapper">
                 <div class="block">
@@ -95,38 +97,56 @@
             </div>
         </section>
         <div class="borders"></div>
-        <section class="section3" id="experience">
-            <div class="banner"></div>
-            <div class="text">
-                <div style="display: flex; flex-direction:column; gap: 5px; background-color: #212121;">
-                    <p class="title-exp">Experience</p>
+        <div class="title-black">
+            <h1 class="title-exp container" id="experience">Experience</h1>
+        </div>
+        
+        <div class="wrapper-sect">
+            <section class="section3 container">
+                <div class="banner"></div>
+                <div class="text">
                     <p class="subtitle">I have more than 100+ projects and more than 2 years of experience</p>
+                    <div class="desc">
+                        <p class="msg">My Work Experience:</p>
+                        <ul class="lists">
+                            Company "Taqtile"
+                            <li class="list">UI/UX Design</li>
+                            <li class="list">Game Illustration</li>
+                            <li class="list">Advertising templates</li>
+                        </ul>
+                        <ul class="lists">
+                            Company "Dream Makers"
+                            <li class="list">Graphic Design</li>
+                            <li class="list">Illustration</li>
+                        </ul>
+                        <p class="education">Education: Minsk College of Arts (specialty - Graphic Design)</p>
+                    </div>
                 </div>
-                <div style="display: flex; flex-direction:column; gap: 17px; background-color: #212121;">
-                    <p class="msg">My Work Experience:</p>
-                    <ul class="lists">
-                        Company "Taqtile"
-                        <li class="list">UI/UX Design</li>
-                        <li class="list">Game Illustration</li>
-                        <li class="list">Advertising templates</li>
-                    </ul>
-                    <ul class="lists">
-                        Company "Dream Makers"
-                        <li class="list">Graphic Design</li>
-                        <li class="list">Illustration</li>
-                    </ul>
-                    <p class="education">Education: Minsk College of Arts (specialty - Graphic Design)</p>
-                </div>
-            </div>
-        </section>
-        <h1 class="title" id="portfolio">Portfolio</h1>
-        <section class="section4">
-            
+            </section>
+        </div>
+        <div class="borders"></div>
+        <h1 class="title-port container" id="portfolio">Portfolio</h1>
+        <div class="borders"></div>
+        <section class="section4 container">
             <div class="wrapper">
-                <img src="./src/img/ux:ui.png" alt="UI/UX">
-                <img src="./src/img/ux:ui.png" alt="UI/UX">
-                <img src="./src/img/ux:ui.png" alt="UI/UX">
-                <img src="./src/img/ux:ui.png" alt="UI/UX">
+                <a href="./src/pages/ui-ux.html">
+                    <div class="block">
+                        <img src="./src/img/ux:ui.png" alt="UI/UX">
+                        <p class="text">UI/UX</p>
+                    </div>
+                </a>
+                <a href="./src/pages/ui-ux.html">
+                    <div class="block">
+                        <img src="./src/img/ux:ui.png" alt="UI/UX">
+                        <p class="text">UI/UX</p>
+                    </div>
+                </a>
+                <a href="./src/pages/ui-ux.html">
+                    <div class="block">
+                        <img src="./src/img/ux:ui.png" alt="UI/UX">
+                        <p class="text">UI/UX</p>
+                    </div>
+                </a>
             </div>
 
         </section>
@@ -136,7 +156,7 @@
         <footer class="footer" id="contacts">
             <div class="footer__form">
                 <p class="footer__form_text">Interested in working with me?</p>
-                <div class="footer__form_button">Email Me</div>
+                <a class="footer__form_button" href="mailto:naka200212@gmail.com">Email Me</a>
             </div>
             <div class="borders"></div>
             <div class="footer__contacts">
