@@ -1,6 +1,7 @@
 .section1 {
     display: flex;
 
+
     .text {
         padding-top: 42px;
         padding-right: 84px;
@@ -450,8 +451,10 @@
 @media (max-width: 1200px) {
     
     .section1 {
+        margin: 0 5%;
+
         .text {
-            margin-left: 15px;
+            margin-left: 5%;
             width: 50%;
             
             .buttons {
@@ -467,6 +470,27 @@
             background-position: center;
             background-size: cover;
         }
+    }
+
+    .section2 {
+        padding: 5% 0;
+
+        .wrapper {
+            gap: 35px;
+            margin: 0 5%;
+        }
+    }
+
+    .title {
+        padding: 20px 5%;
+    }
+
+    .title-exp {
+        padding: 20px 5%;
+    }
+
+    .title-port {
+        padding: 20px 5%;
     }
 }
 
