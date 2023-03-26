@@ -110,11 +110,12 @@
                         color: $white;
                         background-color: $black;
                         border: 1px solid $black;
-                        border-radius: 10px;
-                        -webkit-border-radius: 10px;
-                        -moz-border-radius: 10px;
-                        -ms-border-radius: 10px;
-                        -o-border-radius: 10px;
+                        border-radius: 3px;
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius: 3px;
+                        -ms-border-radius: 3px;
+                        -o-border-radius: 3px;
+
                         transition: all .5s;
                         -webkit-transition: all .5s;
                         -moz-transition: all .5s;
@@ -127,7 +128,18 @@
                     }
                     
                     .request:hover {
-                        box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+                        background-color: $beige;
+                        color: $black;
+                    }
+
+                    .request:active {
+                        background-color: $beige;
+                        color: grey;
+                        transform: translatey(5px);
+                        -webkit-transform: translatey(5px);
+                        -moz-transform: translatey(5px);
+                        -ms-transform: translatey(5px);
+                        -o-transform: translatey(5px);
                     }
 
                     .download {
@@ -136,17 +148,17 @@
                         color: $black;
                         background-color: none;
                         border: 1px solid $black;
-                        border-radius: 10px;
-                        -webkit-border-radius: 10px;
-                        -moz-border-radius: 10px;
-                        -ms-border-radius: 10px;
-                        -o-border-radius: 10px;
+                        border-radius: 3px;
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius: 3px;
+                        -ms-border-radius: 3px;
+                        -o-border-radius: 3px;
+
                         transition: all .5s;
                         -webkit-transition: all .5s;
                         -moz-transition: all .5s;
                         -ms-transition: all .5s;
                         -o-transition: all .5s;
-
                         font-family: 'Poppins';
                         font-style: normal;
                         font-weight: 500;
@@ -154,7 +166,19 @@
                     }
 
                     .download:hover {
-                        box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+                        background-color: $black;
+                        color: $white;
+                        cursor: pointer;
+                    }
+
+                    .download:active {
+                        background-color: $black;
+                        color: rgba(246, 246, 246, 0.5);
+                        transform: translatey(5px);
+                        -webkit-transform: translatey(5px);
+                        -moz-transform: translatey(5px);
+                        -ms-transform: translatey(5px);
+                        -o-transform: translatey(5px);
                     }
                 }
             }
@@ -196,40 +220,51 @@
 
             &__header {
                 display: flex;
-                background-color: $black;
-                width: 309px;
-                height: 83px;
+                background-color: white;
+                width: 335px;
+                height: 110px;
                 align-items: center;
                 justify-content: center;
+                flex-direction: column;
+                gap: 15px;
+
+                &_title {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 36px;
+                    background-color: white;
+                }
 
                 img {
-                    background-color: $black;
+                    background-color: white;
+                    width: 40px;
                 }
             }
 
             &__body {
-                width: 309px;
-                height: 260px;
+                width: 335px;
+                height: 200px;
                 background-color: white;
 
                 .lists {
                     display: flex;
                     flex-direction: column;
-                    gap: 20px;
+                    gap: 5px;
 
                     background-color: inherit;
                     padding-bottom: 15px;
-                    margin-right: 55px;
-                    margin-left: 50px;
-                    margin-top: 25px;
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 18px;
-                    line-height: 32px;
-
+                    margin-right: 25px;
+                    margin-left: 35px;
+                    
                     .list {
                         background-color: inherit;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 30px;
                     }
                 }
 
@@ -413,13 +448,23 @@
         }
         
 
-        .block {
+        .block-1 {
             display: flex;
             flex-direction: column;
             align-items: center;
 
-            img {
-                width: 400px;
+            .mask {
+                opacity: 1;
+                // background: rgba(33, 33, 33, 0.7);
+            }
+
+            .img {
+                background: url(../img/ux-ui.jpg);
+                background-size: contain;
+                width: 350px;
+                height: 350px;
+                position: relative;
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
             }
 
             .text {
@@ -429,6 +474,119 @@
                 font-size: 20px;
                 line-height: 26px;
                 color: $black;
+            }
+        }
+
+        .block-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .img {
+                background: url(../img/graph.png);
+                background-size: contain;
+                width: 350px;
+                height: 350px;
+                position: relative;
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            }
+
+            .text {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 26px;
+                color: $black;
+            }
+        }
+
+
+        .block-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+
+            .img {
+                background: url(../img/illustration.jpg);
+                background-size: contain;
+                width: 350px;
+                height: 350px;
+                position: relative;
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            }
+
+            .text {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 26px;
+                color: $black;
+            }
+        }
+
+        .block-1:hover {
+            .img::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: rgba(33, 33, 33, 0.7);
+                z-index: 10;
+            }
+
+            .img::before {
+                content: url(../img/hover_ui-ux.png);
+                position: absolute;
+                z-index: 20;
+                left: 10px;
+                top: 35%;
+            }
+        }
+
+        .block-2:hover {
+            .img::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: rgba(33, 33, 33, 0.7);
+                z-index: 10;
+            }
+
+            .img::before {
+                content: url(../img/hover_graph.png);
+                position: absolute;
+                z-index: 20;
+                left: 10px;
+                top: 35%;
+            }
+        }
+
+        .block-3:hover {
+            .img::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: rgba(33, 33, 33, 0.7);
+                z-index: 10;
+            }
+
+            .img::before {
+                content: url(../img/hover_illustration.png);
+                position: absolute;
+                z-index: 20;
+                left: 10px;
+                top: 35%;
             }
         }
     }

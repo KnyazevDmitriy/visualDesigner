@@ -1,0 +1,181 @@
+.section1 {
+    display: flex;
+
+    .text {
+        padding-top: 42px;
+        border-right: 2px solid $black;
+        display: flex;
+        flex-direction: column;
+        gap: 211px;
+        width: 100%;
+        padding-right: 120px;
+
+        .portfolio {
+            display: flex;
+            flex-direction: column;
+
+            .name {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 36px;
+                color: $black;
+            }
+
+            .title {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 52px;
+                color: $black;
+            }
+        }
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            padding-bottom: 46px;
+
+
+            .subtitle,
+            .call {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                color: $black;
+            }
+        }
+    }
+
+    .banner {
+        background: url(../../img/ux-ui.jpg) no-repeat;
+        background-size: cover;
+        width: 100%;
+        border-right: 2px solid $black;
+    }
+}
+
+.section2 {
+    padding: 50px 0;
+
+    a {
+        img {
+            width: 100%;
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        margin-top: 54px;
+
+        .desc {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: $black;
+            width: 80%;
+        }
+
+        .button {
+            width: 20%;
+            background-color: $black;
+            color: white;
+            text-decoration: none;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 26px;
+            padding: 20px 0 20px 13px;
+            position: relative;
+        }
+
+        .button::after {
+            content: url(../../img/arrow.svg);
+            position: absolute;
+            top: 22px;
+            right: 23px;
+        }
+    }
+}
+
+.wrapper-title {
+    display: flex;
+    align-items: center;
+
+    .inner-1 {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        margin-left: 45px;
+
+        .title {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 62px;
+            color: $black;
+            position: relative;
+        }
+
+        .title::before {
+            content: url(../../img/ellipse.svg);
+            position: absolute;
+            left: -40px;
+        }
+
+        .desc {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: rgba(33, 33, 33, 0.38);
+        }
+    }
+
+    .border {
+        height: 152px;
+        width: 2px;
+        background: $black;
+    }
+
+    .inner-2 {
+        width: 55%;
+
+        .desc {
+            text-align: left;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            padding-left: 180px;
+            color: $black;
+        }
+    }
+}
+
+.borders {
+    position: relative;
+
+    .border {
+        position: absolute;
+
+        bottom: -136px;
+        height: 136px;
+        width: 2px;
+        left: 25%;
+        background-color: black;
+    }
+}

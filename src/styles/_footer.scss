@@ -28,33 +28,41 @@
         &_button {
             background: #F6F6F6;
             padding: 25px 45px;
-
-            border-radius: 10px;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            -ms-border-radius: 10px;
-            -o-border-radius: 10px;
-
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 600;
             font-size: 24px;
             line-height: 36px;
-
             transition: all .3s;
             -webkit-transition: all .3s;
             -moz-transition: all .3s;
             -ms-transition: all .3s;
             -o-transition: all .3s;
-
             cursor: pointer;
-
             color: black;
             text-decoration: none;
+            border: 1px solid black;
         }
 
         &_button:hover {
-            background-color: #A09F9E;
+            background-color: black;
+            color: white;
+            border: 1px solid $beige;
+        }
+
+        &_button:active {
+            color: rgba(246, 246, 246, 0.5);
+            border: 1px solid rgba(246, 246, 246, 0.5);
+            transform: translatey(5px);
+            -webkit-transform: translatey(5px);
+            -moz-transform: translatey(5px);
+            -ms-transform: translatey(5px);
+            -o-transform: translatey(5px);
         }
     }
 
