@@ -526,10 +526,10 @@
     -o-transition: 0.3s;
   }
   .section2 .wrapper .read-more-checker ~ .read-more-button:before {
-    content: url(../../img/read_more.png);
+    content: url(../../img/read_more.svg);
   }
   .section2 .wrapper .read-more-checker:checked ~ .read-more-button:before {
-    content: url(../../img/read_more.png);
+    content: url(../../img/read_more.svg);
   }
   .section2 .wrapper .read-more-button {
     position: absolute;
@@ -552,10 +552,10 @@
     -o-transition: 0.3s;
   }
   .section2 .wrapper .read-more-checker2 ~ .read-more-button2:before {
-    content: url(../../img/read_more.png);
+    content: url(../../img/read_more.svg);
   }
   .section2 .wrapper .read-more-checker2:checked ~ .read-more-button2:before {
-    content: url(../../img/read_more.png);
+    content: url(../../img/read_more.svg);
   }
   .section2 .wrapper .read-more-button2 {
     position: absolute;
@@ -578,10 +578,10 @@
     -o-transition: 0.3s;
   }
   .section2 .wrapper .read-more-checker3 ~ .read-more-button3:before {
-    content: url(../../img/read_more.png);
+    content: url(../../img/read_more.svg);
   }
   .section2 .wrapper .read-more-checker3:checked ~ .read-more-button3:before {
-    content: url(../../img/read_more.png);
+    content: url(../../img/read_more.svg);
   }
   .section2 .wrapper .read-more-button3 {
     position: absolute;
@@ -604,10 +604,10 @@
     -o-transition: 0.3s;
   }
   .section2 .wrapper .read-more-checker4 ~ .read-more-button4:before {
-    content: url(../../img/read_more.png);
+    content: url(../../img/read_more.svg);
   }
   .section2 .wrapper .read-more-checker4:checked ~ .read-more-button4:before {
-    content: url(../../img/read_more.png);
+    content: url(../../img/read_more.svg);
   }
   .section2 .wrapper .read-more-button4 {
     position: absolute;
@@ -630,10 +630,10 @@
     -o-transition: 0.3s;
   }
   .section2 .wrapper .read-more-checker5 ~ .read-more-button5:before {
-    content: url(../../img/read_more.png);
+    content: url(../../img/read_more.svg);
   }
   .section2 .wrapper .read-more-checker5:checked ~ .read-more-button5:before {
-    content: url(../../img/read_more.png);
+    content: url(../../img/read_more.svg);
   }
   .section2 .wrapper .read-more-button5 {
     position: absolute;
