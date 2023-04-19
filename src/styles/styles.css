@@ -804,10 +804,12 @@
     gap: 30px;
   }
   .section2 .wrapper .block__header {
+    padding: 10px 0px;
     width: 250px;
   }
   .section2 .wrapper .block__body {
     width: 250px;
+    height: 100%;
   }
   .section2 .wrapper .block__body .lists {
     gap: 10px;

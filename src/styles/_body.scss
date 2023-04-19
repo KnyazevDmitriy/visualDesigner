@@ -726,11 +726,13 @@
 
             .block {
                 &__header {
+                    padding: 10px 0px;
                     width: 250px;
                 }
 
                 &__body {
                     width: 250px;
+                    height: 100%;
 
                     .lists {
                         gap: 10px;
