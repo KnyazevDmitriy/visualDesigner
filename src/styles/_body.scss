@@ -64,7 +64,7 @@
                     gap: 16px;
 
                     a {
-                        padding: 6px 8px 5px;
+                        padding: 8px 8px 5px;
                         border: 2px solid $black;
                         border-radius: 50%;
                         -webkit-border-radius: 50%;
@@ -79,11 +79,10 @@
                     }
 
                     a:hover {
-                        background-color: $white;
-                        box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+                        background-color: rgb(152, 152, 152);
 
                         .img {
-                            background-color: $white;
+                            background-color: rgb(152, 152, 152);
 
                         }
                     }
@@ -166,8 +165,7 @@
                     }
 
                     .download:hover {
-                        background-color: $black;
-                        color: $white;
+                        background-color: rgb(152, 152, 152);
                         cursor: pointer;
                     }
 
@@ -728,17 +726,20 @@
     }
 
     .title-port {
-        padding: 10px 10px;
+        padding: 10px 32px;
+        font-size: 30px;
     }
 
     .title {
-        padding: 10px 10px;
+        padding: 10px 32px;
+        font-size: 30px;
     }
     
     .title-black {
 
         .title-exp {
-            padding: 10px 10px;
+            padding: 10px 32px;
+            font-size: 30px;
         }
     }
 
@@ -780,7 +781,7 @@
             width: 100%;
             border-right: none;
             padding-bottom: 10px;
-            padding-left: 5%;
+            padding-left: 32px;
 
             .subtitle::before {
                 display: none;
@@ -800,12 +801,13 @@
     .section4 {
 
         .wrapper {
-            gap: 10px;
+            gap: 40px;
+
             .block {
 
                 img {
-                    width: 70%;
-                    height: 70%;
+                    width: 300px;
+                    height: 300px;
                 }
             }
         }
@@ -843,17 +845,18 @@
                     }
 
                     .btns {
-                        justify-content: space-evenly;
+                        justify-content: left;
+                        gap: 10px;
     
                         .request {
                             display: flex;
-                            font-size: 13px;
+                            font-size: 15px;
                             align-items: center;
                         }
 
                         .download {
                             display: flex;
-                            font-size: 13px;
+                            font-size: 15px;
                             align-items: center;
                         }
                     }
@@ -862,21 +865,22 @@
         }
     }
 
-    .title-port {
-        padding: 0 10px;
-        font-size: 30px;
-    }
 
     .title {
-        padding: 0 10px;
+        padding: 0 32px;
         font-size: 30px;
     }
     
     .title-black {
         .title-exp {
-            padding: 0 10px;
+            padding: 0 32px;
             font-size: 30px;
         }
+    }
+
+    .title-port {
+        padding: 0 32px;
+        font-size: 30px;
     }
     
     .section2 {
@@ -901,6 +905,12 @@
                     }
                 }
             }
+        }
+    }
+
+    .section3 {
+        .text {
+            padding-left: 32px;
         }
     }
 }

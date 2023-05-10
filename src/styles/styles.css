@@ -10,7 +10,7 @@
 .header__nav .nav-menu {
   display: flex;
   list-style: none;
-  gap: 100px;
+  gap: 87px;
   padding: 30px 0;
   z-index: 20;
   margin: 0 5%;
@@ -41,7 +41,7 @@
   right: 25px;
   display: block;
   width: 2rem;
-  height: 0.23rem;
+  height: 2px;
   margin: 5px auto;
   border-radius: 15px;
   background-color: #212121;
@@ -54,14 +54,17 @@
 }
 .header .burger .bar:nth-child(1) {
   width: 1.1rem;
+  height: 2px;
   top: 10px;
 }
 .header .burger .bar:nth-child(2) {
   width: 2rem;
+  height: 2px;
   top: 17px;
 }
 .header .burger .bar:nth-child(3) {
   width: 1.5rem;
+  height: 2px;
   top: 24px;
 }
 
@@ -85,7 +88,7 @@
 }
 @media (max-width: 768px) {
   .header__nav .logo {
-    margin: 0 0 0 0;
+    margin: 0 0 0 -10px;
   }
   .header {
     margin: 0 5%;
@@ -258,7 +261,7 @@
   gap: 16px;
 }
 .section1 .text .buttons .socials .social a {
-  padding: 6px 8px 5px;
+  padding: 8px 8px 5px;
   border: 2px solid #212121;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -272,11 +275,10 @@
   -o-transition: all 0.5s;
 }
 .section1 .text .buttons .socials .social a:hover {
-  background-color: #F6F6F6;
-  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(152, 152, 152);
 }
 .section1 .text .buttons .socials .social a:hover .img {
-  background-color: #F6F6F6;
+  background-color: rgb(152, 152, 152);
 }
 .section1 .text .buttons .socials .social .img {
   transition: all 0.5s;
@@ -348,8 +350,7 @@
   font-size: 24px;
 }
 .section1 .text .buttons .socials .btns .download:hover {
-  background-color: #212121;
-  color: #F6F6F6;
+  background-color: rgb(152, 152, 152);
   cursor: pointer;
 }
 .section1 .text .buttons .socials .btns .download:active {
@@ -802,13 +803,16 @@
     display: none;
   }
   .title-port {
-    padding: 10px 10px;
+    padding: 10px 32px;
+    font-size: 30px;
   }
   .title {
-    padding: 10px 10px;
+    padding: 10px 32px;
+    font-size: 30px;
   }
   .title-black .title-exp {
-    padding: 10px 10px;
+    padding: 10px 32px;
+    font-size: 30px;
   }
   .section2 {
     padding: 50px 0;
@@ -839,7 +843,7 @@
     width: 100%;
     border-right: none;
     padding-bottom: 10px;
-    padding-left: 5%;
+    padding-left: 32px;
   }
   .section3 .text .subtitle::before {
     display: none;
@@ -853,11 +857,11 @@
     border: none;
   }
   .section4 .wrapper {
-    gap: 10px;
+    gap: 40px;
   }
   .section4 .wrapper .block img {
-    width: 70%;
-    height: 70%;
+    width: 300px;
+    height: 300px;
   }
 }
 @media (max-width: 480px) {
@@ -884,28 +888,29 @@
     gap: 15px;
   }
   .section1 .text .buttons .socials .btns {
-    justify-content: space-evenly;
+    justify-content: left;
+    gap: 10px;
   }
   .section1 .text .buttons .socials .btns .request {
     display: flex;
-    font-size: 13px;
+    font-size: 15px;
     align-items: center;
   }
   .section1 .text .buttons .socials .btns .download {
     display: flex;
-    font-size: 13px;
+    font-size: 15px;
     align-items: center;
   }
-  .title-port {
-    padding: 0 10px;
-    font-size: 30px;
-  }
   .title {
-    padding: 0 10px;
+    padding: 0 32px;
     font-size: 30px;
   }
   .title-black .title-exp {
-    padding: 0 10px;
+    padding: 0 32px;
+    font-size: 30px;
+  }
+  .title-port {
+    padding: 0 32px;
     font-size: 30px;
   }
   .section2 {
@@ -925,6 +930,9 @@
   .section2 .wrapper .block__body .lists {
     gap: 10px;
     font-size: 15px;
+  }
+  .section3 .text {
+    padding-left: 32px;
   }
 }
 .footer {
@@ -972,12 +980,12 @@
   cursor: pointer;
   color: black;
   text-decoration: none;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 .footer__form_button:hover {
-  background-color: black;
+  background-color: #212121;
   color: white;
-  border: 1px solid #EEECEA;
+  border: 2px solid #EEECEA;
 }
 .footer__form_button:active {
   color: rgba(246, 246, 246, 0.5);
@@ -1048,7 +1056,7 @@
   gap: 30px;
 }
 .footer__contacts .wrapper-2 .social a {
-  padding: 6px 8px 5px;
+  padding: 8px 8px 5px;
   border: 2px solid #212121;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -1062,11 +1070,10 @@
   -o-transition: all 0.5s;
 }
 .footer__contacts .wrapper-2 .social a:hover {
-  background-color: #F6F6F6;
-  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(152, 152, 152);
 }
 .footer__contacts .wrapper-2 .social a:hover .img {
-  background-color: #F6F6F6;
+  background-color: rgb(152, 152, 152);
 }
 .footer__contacts .wrapper-2 .social .img {
   transition: all 0.5s;
@@ -1109,7 +1116,7 @@
     max-width: 90%;
   }
   .footer__form_button {
-    padding: 12px 20px;
+    padding: 12px 40px;
     font-size: 17px;
   }
   .footer .borders {

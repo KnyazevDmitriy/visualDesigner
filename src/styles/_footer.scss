@@ -46,13 +46,13 @@
             cursor: pointer;
             color: black;
             text-decoration: none;
-            border: 1px solid black;
+            border: 2px solid black;
         }
 
         &_button:hover {
-            background-color: black;
+            background-color: $black;
             color: white;
-            border: 1px solid $beige;
+            border: 2px solid $beige;
         }
 
         &_button:active {
@@ -135,7 +135,7 @@
                 gap: 30px;
 
                 a {
-                    padding: 6px 8px 5px;
+                    padding: 8px 8px 5px;
                     border: 2px solid $black;
                     border-radius: 50%;
                     -webkit-border-radius: 50%;
@@ -147,14 +147,15 @@
                     -moz-transition: all .5s;
                     -ms-transition: all .5s;
                     -o-transition: all .5s;
+                    // background-color: red;
                 }
 
                 a:hover {
-                    background-color: $white;
-                    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+                    background-color: rgb(152, 152, 152);
 
                     .img {
-                        background-color: $white;
+                        background-color: rgb(152, 152, 152);
+
                     }
                 }
 
@@ -216,7 +217,7 @@
             }
 
             &_button {
-                padding: 12px 20px;
+                padding: 12px 40px;
                 font-size: 17px;
             }
         }
