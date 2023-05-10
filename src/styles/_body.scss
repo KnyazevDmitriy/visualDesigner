@@ -105,11 +105,11 @@
                     padding-bottom: 30px;
 
                     .request {
-                        padding: 12px;
+                        padding: 24px 32px;
                         text-decoration: none;
                         color: $white;
                         background-color: $black;
-                        border: 1px solid $black;
+                        border: 2px solid $black;
                         border-radius: 3px;
                         -webkit-border-radius: 3px;
                         -moz-border-radius: 3px;
@@ -124,7 +124,7 @@
                         font-family: 'Poppins';
                         font-style: normal;
                         font-weight: 500;
-                        font-size: 14px;
+                        font-size: 24px;
                     }
                     
                     .request:hover {
@@ -143,11 +143,11 @@
                     }
 
                     .download {
-                        padding: 12px;
+                        padding: 24px 32px;
                         text-decoration: none;
                         color: $black;
                         background-color: none;
-                        border: 1px solid $black;
+                        border: 2px solid $black;
                         border-radius: 3px;
                         -webkit-border-radius: 3px;
                         -moz-border-radius: 3px;
@@ -162,7 +162,7 @@
                         font-family: 'Poppins';
                         font-style: normal;
                         font-weight: 500;
-                        font-size: 14px;
+                        font-size: 24px;
                     }
 
                     .download:hover {
@@ -216,7 +216,7 @@
         .block {
             display: flex;
             flex-direction: column;
-            box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.2);
+            // box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.2);
 
             &__header {
                 display: flex;
@@ -245,8 +245,9 @@
 
             &__body {
                 width: 335px;
-                height: 200px;
+                height: 220px;
                 background-color: white;
+                padding-left: 28px;
 
                 .lists {
                     display: flex;
@@ -327,45 +328,49 @@
 
     .banner {
         background: url(../img/banner-2.png) no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
+
         background-color: $black;
+        background-size: cover;
         width: 624px;
         height: 583px;
         border-right: 2px solid white;
         border-left: 2px solid white;
+        padding-bottom: 870px;
     }
 
-    .banner {
-        // background: url(../img/banner-2-monile.jpg) no-repeat;
-        background: url(../img/banner-2.png) no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 60%;
-        height: 10rem;
-        padding-bottom: 70%;
-        // border: none;
-        padding-bottom: 628px;
-    }
 
     .text {
         width: 45%;
         background: inherit;
-        padding-left: 62px;
+        padding-left: 103px;
         display: flex;
         flex-direction: column;
-        gap: 41px;
+        gap: 24px;
         justify-content: center;
-        padding-right: 15px;
-        border-right: 2px solid white;
+        padding-right: 10px;
+        padding-top: 39px;
+        padding-bottom: 30px;
+        // border-right: 2px solid white;
 
         .subtitle {
-            background-color: inherit;
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 500;
-            font-size: 20px;
-            line-height: 26px;
+            font-size: 24px;
+            line-height: 36px;
+            display: flex;
+            align-items: center;
+            background: none;
             color: $white;
+            position: relative;
+        }
+
+        .subtitle::before {
+            position: absolute;
+            content: url(../img/quotes.svg);
+            left: -80px;
+            top: 0;
         }
 
         .desc {
@@ -378,42 +383,9 @@
         .msg {
             font-family: 'Poppins';
             font-style: normal;
-            margin-top: 1%;
             font-weight: 400;
             font-size: 18px;
-            line-height: 138%;
-            background: none;
-            color: $white;
-        }
-
-        .lists {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            margin-top: 2%;
-            line-height: 138%;
-            background: none;
-            color: $white;
-        }
-
-        .list {
-            margin-left: 25px;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 138%;
-            background: none;
-            color: $white;
-        }
-
-        .education {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 138%;
+            line-height: 30px;
             background: none;
             color: $white;
         }
@@ -464,7 +436,7 @@
                 width: 350px;
                 height: 350px;
                 position: relative;
-                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+                // box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
             }
 
             .text {
@@ -488,7 +460,7 @@
                 width: 350px;
                 height: 350px;
                 position: relative;
-                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+                // box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
             }
 
             .text {
@@ -514,7 +486,7 @@
                 width: 350px;
                 height: 350px;
                 position: relative;
-                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+                // box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
             }
 
             .text {
@@ -540,11 +512,11 @@
             }
 
             .img::before {
-                content: url(../img/hover_ui-ux.png);
+                content: url(../img/ui.svg);
                 position: absolute;
                 z-index: 20;
-                left: 10px;
-                top: 35%;
+                left: 62px;
+                top: 40%;
             }
         }
 
@@ -561,10 +533,10 @@
             }
 
             .img::before {
-                content: url(../img/hover_graph.png);
+                content: url(../img/GD.svg);
                 position: absolute;
                 z-index: 20;
-                left: 10px;
+                left: 50px;
                 top: 35%;
             }
         }
@@ -582,11 +554,11 @@
             }
 
             .img::before {
-                content: url(../img/hover_illustration.png);
+                content: url(../img/ill.svg);
                 position: absolute;
                 z-index: 20;
-                left: 10px;
-                top: 35%;
+                left: 35px;
+                top: 40%;
             }
         }
     }
@@ -750,11 +722,17 @@
     .section3 {
         flex-direction: column-reverse;
         border: none;
+        
 
         .text {
             width: 100%;
             border-right: none;
             padding-bottom: 10px;
+            padding-left: 5%;
+
+            .subtitle::before {
+                display: none;
+            }
         }
 
         .banner {

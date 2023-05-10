@@ -20,7 +20,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   color: #212121;
   transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -84,6 +84,9 @@
   }
 }
 @media (max-width: 768px) {
+  .header__nav .logo {
+    margin: 0 0 0 0;
+  }
   .header {
     margin: 0 5%;
     padding: 0 16px;
@@ -770,7 +773,7 @@
   margin-bottom: 136px;
   width: 70%;
   height: 224px;
-  background-color: black;
+  background-color: #212121;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -780,14 +783,14 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 40px;
   line-height: 62px;
   color: #F6F6F6;
   width: 410px;
 }
 .footer__form_button {
   background: #F6F6F6;
-  padding: 25px 45px;
+  padding: 24px 50px;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;

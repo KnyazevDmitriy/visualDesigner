@@ -8,7 +8,7 @@
         
         width: 70%;
         height: 224px;
-        background-color: black;
+        background-color: #212121;
 
         display: flex;
         justify-content: space-around;
@@ -19,7 +19,7 @@
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 600;
-            font-size: 36px;
+            font-size: 40px;
             line-height: 62px;
             color: #F6F6F6;
             width: 410px;
@@ -27,7 +27,7 @@
 
         &_button {
             background: #F6F6F6;
-            padding: 25px 45px;
+            padding: 24px 50px;
             border-radius: 3px;
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
