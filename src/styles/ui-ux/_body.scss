@@ -1,5 +1,6 @@
 .section1 {
     display: flex;
+    padding-top: 85px;
 
     .text {
         padding-top: 42px;
@@ -111,7 +112,7 @@
         .button::after {
             content: url(../../img/arrow.svg);
             position: absolute;
-            top: 27px;
+            top: 31px;
             right: 23px;
         }
     }

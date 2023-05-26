@@ -1,6 +1,6 @@
 .section1 {
     display: flex;
-
+    padding-top: 85px;
 
     .text {
         padding-top: 42px;
@@ -348,7 +348,7 @@
         justify-content: center;
         padding-right: 10px;
         padding-top: 39px;
-        padding-bottom: 30px;
+        padding-bottom: 45px;
         // border-right: 2px solid white;
 
         .subtitle {
@@ -668,7 +668,7 @@
             justify-content: center;
             padding-right: 10px;
             padding-top: 39px;
-            padding-bottom: 30px;
+            padding-bottom: 45px;
             // border-right: 2px solid white;
         }
     }
@@ -780,7 +780,7 @@
         .text {
             width: 100%;
             border-right: none;
-            padding-bottom: 10px;
+            padding-bottom: 25px;
             padding-left: 32px;
 
             .subtitle::before {
@@ -803,11 +803,27 @@
         .wrapper {
             gap: 40px;
 
-            .block {
+            .block-1 {
 
-                img {
-                    width: 300px;
-                    height: 300px;
+                .img {
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+
+            .block-2 {
+
+                .img {
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+
+            .block-3 {
+
+                .img {
+                    width: 250px;
+                    height: 250px;
                 }
             }
         }
@@ -845,7 +861,7 @@
                     }
 
                     .btns {
-                        justify-content: left;
+                        justify-content: center;
                         gap: 10px;
     
                         .request {
